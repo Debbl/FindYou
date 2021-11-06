@@ -5,6 +5,11 @@ exports.createPages = async function ({ actions, graphql }) {
         edges {
           node {
             frontmatter {
+              URL
+              category
+              categoryName
+              description
+              imageSrc
               slug
               title
             }

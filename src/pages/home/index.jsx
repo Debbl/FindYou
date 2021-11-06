@@ -3,9 +3,10 @@ import { HomeStyled } from './home.styled';
 import { getItemsListData } from '../../common/items.date';
 import MenuCate from '../../components/menu-cate';
 import AppItemCate from '../../components/app-item-cate';
+import useFormatData from '../../hooks/use-format-data';
 
 function Home() {
-  const ItemsListData = getItemsListData();
+  const ItemsListData = useFormatData();
 
   return (
     <HomeStyled>

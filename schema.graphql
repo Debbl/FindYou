@@ -340,6 +340,11 @@ type MarkdownRemarkEdge {
 }
 
 type MarkdownRemarkFrontmatter {
+  URL: String
+  category: String
+  categoryName: String
+  description: String
+  imageSrc: String
   slug: String
   title: String
 }
@@ -793,6 +798,11 @@ enum FileFieldsEnum {
   childMarkdownRemark___excerpt @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___excerptAst @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___fileAbsolutePath @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+  childMarkdownRemark___frontmatter___URL
+  childMarkdownRemark___frontmatter___category
+  childMarkdownRemark___frontmatter___categoryName
+  childMarkdownRemark___frontmatter___description
+  childMarkdownRemark___frontmatter___imageSrc
   childMarkdownRemark___frontmatter___slug
   childMarkdownRemark___frontmatter___title
   childMarkdownRemark___headings @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -850,6 +860,11 @@ enum FileFieldsEnum {
   childrenMarkdownRemark___excerpt @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___excerptAst @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___fileAbsolutePath @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+  childrenMarkdownRemark___frontmatter___URL
+  childrenMarkdownRemark___frontmatter___category
+  childrenMarkdownRemark___frontmatter___categoryName
+  childrenMarkdownRemark___frontmatter___description
+  childrenMarkdownRemark___frontmatter___imageSrc
   childrenMarkdownRemark___frontmatter___slug
   childrenMarkdownRemark___frontmatter___title
   childrenMarkdownRemark___headings @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1055,6 +1070,11 @@ enum MarkdownRemarkFieldsEnum {
   excerpt @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
   excerptAst @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
   fileAbsolutePath @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___URL
+  frontmatter___category
+  frontmatter___categoryName
+  frontmatter___description
+  frontmatter___imageSrc
   frontmatter___slug
   frontmatter___title
   headings @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1831,6 +1851,11 @@ input MarkdownRemarkFilterListInput {
 }
 
 input MarkdownRemarkFrontmatterFilterInput {
+  URL: StringQueryOperatorInput
+  category: StringQueryOperatorInput
+  categoryName: StringQueryOperatorInput
+  description: StringQueryOperatorInput
+  imageSrc: StringQueryOperatorInput
   slug: StringQueryOperatorInput
   title: StringQueryOperatorInput
 }
