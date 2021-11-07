@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 function useFormatData() {
   const data =  useStaticQuery(graphql`
-    query MyQuery {
+    query {
       allMarkdownRemark {
         edges {
           node {
