@@ -1,20 +1,27 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 
-export default function BlogPost({ data }) {
-  const post = data.markdownRemark
+export default function MarkdownContentTemplate({ data }) {
+  const { html } = data.markdownRemark;
+  const { title } = data.markdownRemark.frontmatter;
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
+  console.log(data);
   return (
-    <div>
-      {post.frontmatter.title}
+    <div
+      dangerouslySetInnerHTML={{__html: html}}>
     </div>
   )
 }
 
 export const query = graphql`
-  query ($slug: String, $title: String) {
-    markdownRemark(frontmatter: {slug: {eq: $slug}, title: {eq: $title}}) {
+  query ($html: String, $title: String) {
+    markdownRemark(html: {eq: $html}, frontmatter: {title: {eq: $title}}) {
+      html
       frontmatter {
-        slug
         title
       }
     }

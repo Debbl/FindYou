@@ -3,6 +3,7 @@ import { HomeLayoutStyled } from './layout.styled';
 import MenuCate from '../menu-cate';
 import AppItemCate from '../app-item-cate';
 import useFormatData from '../../hooks/use-format-data';
+import AboutMeFooter from '../about-me-footer';
 
 function HomeLayout() {
 
@@ -24,6 +25,7 @@ function HomeLayout() {
           ))
         }
       </div>
+      <AboutMeFooter />
     </HomeLayoutStyled>
   )
 }

@@ -4,6 +4,7 @@ exports.createPages = async function ({ actions, graphql }) {
       allMarkdownRemark {
         edges {
           node {
+            html
             frontmatter {
               URL
               category
@@ -19,11 +20,15 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   `)
   data.allMarkdownRemark.edges.forEach(edge => {
-    const slug = edge.node.frontmatter.slug
+    const html = edge.node.html;
+    const { slug, title } = edge.node.frontmatter;
     actions.createPage({
       path: slug,
       component: require.resolve(`./src/templates/content-template.jsx`),
-      context: { slug: slug },
+      context: {
+        html: html,
+        title: title
+      },
     })
   })
 }
