@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../assets/css/index.css';
+import '../../assets/css/reset.css';
 import { ContentLayoutStyled } from './content-layout.styled';
 import HomeHeader from '../home-header';
 

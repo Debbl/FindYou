@@ -11,7 +11,7 @@ function AppItem(props) {
       <a className="app-item-link" href={itemUrl}>
         {/* Item 图片和标签 */}
         <div className="app-item-logo">
-          <img src={itemImgSrc} />
+          <img src={itemImgSrc} alt={itemTitle}/>
           <span>{itemTitle}</span>
         </div>
         {/* Item 介绍 */}
