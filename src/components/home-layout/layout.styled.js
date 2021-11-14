@@ -6,7 +6,7 @@ const HomeLayoutStyled = styled.div`
     top: 0;
     height: 100vh;
     width: 16vw;
-    border-right: 2px solid black;
+    border-right: 2px solid #e6f3ff;
   }
 
   .show-cate {

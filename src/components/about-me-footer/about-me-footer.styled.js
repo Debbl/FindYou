@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-const AboutMeFooterStyled = styled.div`
+const AboutMeFooterStyled = styled.footer`
   position: fixed;
   bottom: 0;
   width: 100vw;
   overflow: hidden;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #e6f3ff;
   padding: 10px 3px;
+  background-color: #b3daff;
 `
 
 export {

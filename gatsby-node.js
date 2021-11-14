@@ -21,13 +21,14 @@ exports.createPages = async function ({ actions, graphql }) {
   `)
   data.allMarkdownRemark.edges.forEach(edge => {
     const html = edge.node.html;
-    const { slug, title } = edge.node.frontmatter;
+    const { slug, title, description } = edge.node.frontmatter;
     actions.createPage({
       path: slug,
       component: require.resolve(`./src/templates/content-template.jsx`),
       context: {
-        html: html,
-        title: title
+        html,
+        title,
+        description
       },
     })
   })

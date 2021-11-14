@@ -1,28 +1,32 @@
-import React, { useEffect } from "react"
-import { graphql } from "gatsby"
+import React, { useEffect } from "react";
+import { graphql } from "gatsby";
+import ContentLayout from '../components/content-layout/content-layout';
 
 export default function MarkdownContentTemplate({ data }) {
   const { html } = data.markdownRemark;
-  const { title } = data.markdownRemark.frontmatter;
+  const { title, description } = data.markdownRemark.frontmatter;
 
   useEffect(() => {
-    document.title = title;
+    document.title = "Find You " + title;
   }, [title]);
 
   console.log(data);
   return (
-    <div
-      dangerouslySetInnerHTML={{__html: html}}>
-    </div>
+    <ContentLayout
+      title={title}
+      description={description}
+      html={html}
+    />
   )
 }
 
 export const query = graphql`
-  query ($html: String, $title: String) {
-    markdownRemark(html: {eq: $html}, frontmatter: {title: {eq: $title}}) {
+  query ($html: String, $title: String, $description: String) {
+    markdownRemark(html: {eq: $html}, frontmatter: {title: {eq: $title}, description: {eq: $description}}) {
       html
       frontmatter {
-        title
+        title,
+        description
       }
     }
   }
