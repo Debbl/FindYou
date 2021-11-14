@@ -12,7 +12,7 @@ function HomeLayout() {
   return (
     <HomeLayoutStyled>
       <div className="show-menu-cate">
-        <MenuCate />
+        <MenuCate ItemsListData={ItemsListData} />
       </div>
       <div className="show-cate">
         {

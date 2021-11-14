@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { MenuCateStyled } from './menu-cate.styled';
-import { getItemsListData } from '../../common/items.date';
 
 
-function MenuCate() {
+function MenuCate(props) {
 
-  const ItemsListDate = getItemsListData();
+  const ItemsListDate = props.ItemsListData;
   const [activeMenuButton, setActiveMenuButton] = useState(ItemsListDate[0].id);
 
   // 点击页面滑动

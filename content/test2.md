@@ -1,7 +1,7 @@
 ---
 slug: '/test2'
-category: "music"
-categoryName: "音乐"
+category: "chat"
+categoryName: "聊天"
 title: 'test2'
 imageSrc: 'http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg'
 URL: "/test2"
