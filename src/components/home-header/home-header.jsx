@@ -4,11 +4,9 @@ import { HomeHeaderStyled } from './home-header.styled';
 function HomeHeader() {
   return (
     <HomeHeaderStyled>
-      <a href="/">
-        Find You
-      </a>
+      <a href="/">Find You</a>
     </HomeHeaderStyled>
-  )
+  );
 }
 
 export default HomeHeader;

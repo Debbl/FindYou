@@ -11,8 +11,6 @@ const ContentLayoutStyled = styled.div`
       color: #c3c3c3;
     }
   }
-`
+`;
 
-export {
-  ContentLayoutStyled
-};
+export { ContentLayoutStyled };

@@ -17,7 +17,7 @@ const AppItemStyled = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
-    color: #30333C;
+    color: #30333c;
 
     .app-item-logo {
       display: flex;
@@ -44,15 +44,13 @@ const AppItemStyled = styled.div`
       text-overflow: ellipsis;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      color: #A1A7B7
+      color: #a1a7b7;
     }
   }
 
   .app-item-link:hover {
     background-color: #6b7184;
   }
-`
+`;
 
-export {
-  AppItemStyled
-}
+export { AppItemStyled };

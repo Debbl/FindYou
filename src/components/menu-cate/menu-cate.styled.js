@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const MenuCateStyled = styled.div`
   text-align: center;
-  
+
   .menu-list-button {
     display: inline-block;
     width: 16vw;
@@ -15,10 +15,6 @@ const MenuCateStyled = styled.div`
   .menu-list-button-action {
     background-color: #1a90ff;
   }
-  
-  
-`
+`;
 
-export {
-  MenuCateStyled
-};
+export { MenuCateStyled };

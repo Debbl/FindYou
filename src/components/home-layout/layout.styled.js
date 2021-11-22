@@ -11,9 +11,8 @@ const HomeLayoutStyled = styled.div`
 
   .show-cate {
     margin-left: 20vw;
+    margin-bottom: 8vh;
   }
-`
+`;
 
-export {
-  HomeLayoutStyled
-}
+export { HomeLayoutStyled };

@@ -12,9 +12,6 @@ const HomeHeaderStyled = styled.header`
     line-height: 60px;
     text-align: center;
   }
-  
-`
+`;
 
-export {
-  HomeHeaderStyled
-}
+export { HomeHeaderStyled };
