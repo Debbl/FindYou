@@ -1,16 +1,17 @@
 import React from 'react';
 import { PopUpsStyled } from './pop-ups.styled';
+import IntroduceImage from '../../assets/images/introduce.png';
 
 function PopUps(props) {
-  const { setIIsShow } = props;
+  const { setIsShow } = props;
 
-  console.log(setIIsShow);
-  // setIIsShow(false);
   return (
     <PopUpsStyled>
       <div className="show-pops-container">
-        pops
-        <button onClick={() => setIIsShow(false)}>9</button>
+        <img src={IntroduceImage} alt="关于" />
+        <button onClick={() => setIsShow('0')} title="关闭">
+          X
+        </button>
       </div>
     </PopUpsStyled>
   );

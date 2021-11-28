@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 function useFormatData() {
-  const data =  useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
         edges {
@@ -19,26 +19,26 @@ function useFormatData() {
         }
       }
     }
-  `)
+  `);
 
   const cateSet = new Set();
   const list = [];
 
-  data.allMarkdownRemark.edges.forEach(edge => {
-    cateSet.add(edge.node.frontmatter.category)
+  data.allMarkdownRemark.edges.forEach((edge) => {
+    cateSet.add(edge.node.frontmatter.category);
   });
 
-  cateSet.forEach(cate => {
+  cateSet.forEach((cate) => {
     list.push({
       id: cate,
-      cateName: "",
+      cateName: '',
       items: []
-    })
-  })
+    });
+  });
 
-  data.allMarkdownRemark.edges.forEach(edge => {
+  data.allMarkdownRemark.edges.forEach((edge) => {
     let item = edge.node.frontmatter;
-    list.forEach(cate => {
+    list.forEach((cate) => {
       if (item.category === cate.id) {
         cate.cateName = item.categoryName;
         cate.items.push({

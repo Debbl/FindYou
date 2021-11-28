@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.3",
+    "eslint-plugin-react": "^7.27.1",
     "gatsby": "^4.1.0",
     "gatsby-plugin-styled-components": "^5.1.0",
     "gatsby-source-filesystem": "^4.1.0",
@@ -26,6 +27,9 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1"
   }
 }
