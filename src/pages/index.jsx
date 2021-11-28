@@ -1,6 +1,7 @@
 import * as React from 'react';
 import '../assets/css/reset.css';
 import '../assets/css/index.css';
+import 'animate.css';
 import HomeLayout from '../components/home-layout';
 import { useEffect } from 'react';
 

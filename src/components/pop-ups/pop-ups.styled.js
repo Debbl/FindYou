@@ -16,7 +16,6 @@ const PopUpsStyled = styled.div`
     height: 400px;
     border-radius: 40px;
     background-color: #a1a7b7;
-
     img {
       width: 100%;
       height: 100%;
