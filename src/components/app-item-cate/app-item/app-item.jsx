@@ -7,7 +7,7 @@ function AppItem(props) {
 
   return (
     <AppItemStyled>
-      <a className="app-item-link" href={itemUrl}>
+      <a className="app-item-link" href={'./' + itemUrl} title={itemTitle}>
         {/* Item 图片和标签 */}
         <div className="app-item-logo">
           <img src={itemImgSrc} alt={itemTitle} />

@@ -6,7 +6,6 @@ exports.createPages = async function ({ actions, graphql }) {
           node {
             html
             frontmatter {
-              URL
               category
               categoryName
               description

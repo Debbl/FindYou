@@ -9,7 +9,10 @@ const AppItemStyled = styled.div`
   border-radius: 10px;
   overflow: hidden;
   user-select: none;
+  font-weight: bold;
   background-color: #eee;
+  box-shadow: 0.2rem 0.2rem 0.4rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.4rem var(--white);
 
   .app-item-link {
     display: flex;

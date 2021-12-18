@@ -1,10 +1,9 @@
 ---
-slug: '/python'
+slug: 'python'
 category: "program"
 categoryName: "编程"
 title: 'Python'
 imageSrc: 'http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg'
-URL: "/python"
 description: "Python 编程"
 ---
 

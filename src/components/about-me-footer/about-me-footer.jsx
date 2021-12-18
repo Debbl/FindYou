@@ -4,7 +4,8 @@ import { AboutMeFooterStyled } from './about-me-footer.styled';
 function AboutMeFooter() {
   return (
     <AboutMeFooterStyled>
-      <a href="https://aiwan.run">关于我</a>
+      <span>Copyright © 2021 by </span>
+      <a href="https://aiwan.run">Debbl</a>
     </AboutMeFooterStyled>
   );
 }

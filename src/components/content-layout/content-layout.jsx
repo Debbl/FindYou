@@ -3,6 +3,7 @@ import '../../assets/css/index.css';
 import '../../assets/css/reset.css';
 import { ContentLayoutStyled } from './content-layout.styled';
 import HomeHeader from '../home-header';
+import ScrollTopButton from '../scroll-top-button';
 
 function ContentLayout(props) {
   const { title, description, html } = props;
@@ -19,6 +20,7 @@ function ContentLayout(props) {
           className="show-markdown-wrapper"
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
+        <ScrollTopButton />
       </ContentLayoutStyled>
     </>
   );

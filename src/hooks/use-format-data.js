@@ -7,7 +7,6 @@ function useFormatData() {
         edges {
           node {
             frontmatter {
-              URL
               category
               categoryName
               description
@@ -42,7 +41,7 @@ function useFormatData() {
       if (item.category === cate.id) {
         cate.cateName = item.categoryName;
         cate.items.push({
-          itemUrl: item.URL,
+          itemUrl: item.slug,
           itemImgSrc: item.imageSrc,
           itemTitle: item.title,
           itemDec: item.description
