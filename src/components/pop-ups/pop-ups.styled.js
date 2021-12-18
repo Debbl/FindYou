@@ -12,14 +12,14 @@ const PopUpsStyled = styled.div`
 
   .show-pops-container {
     position: relative;
-    width: 800px;
-    height: 400px;
+    width: 80vw;
+    height: 40vw;
     border-radius: 40px;
     background-color: #a1a7b7;
     img {
       width: 100%;
       height: 100%;
-      border-radius: 40px;
+      border-radius: 3vw;
       user-select: none;
       -webkit-user-drag: none;
     }
@@ -27,9 +27,9 @@ const PopUpsStyled = styled.div`
     button {
       position: absolute;
       border-radius: 6px;
-      top: 20px;
-      right: 30px;
-      padding: 12px 28px;
+      top: 2vw;
+      right: 3vw;
+      padding: 1vw 3vw;
       font-size: 10px;
       font-weight: 600;
       color: red;
