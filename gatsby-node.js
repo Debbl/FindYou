@@ -18,8 +18,8 @@ exports.createPages = async function ({ actions, graphql }) {
         }
       }
     }
-  `)
-  data.allMarkdownRemark.edges.forEach(edge => {
+  `);
+  data.allMarkdownRemark.edges.forEach((edge) => {
     const html = edge.node.html;
     const { slug, title, description } = edge.node.frontmatter;
     actions.createPage({
@@ -29,7 +29,7 @@ exports.createPages = async function ({ actions, graphql }) {
         html,
         title,
         description
-      },
-    })
-  })
-}
+      }
+    });
+  });
+};
