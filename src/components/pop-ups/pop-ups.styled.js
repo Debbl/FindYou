@@ -12,8 +12,8 @@ const PopUpsStyled = styled.div`
 
   .show-pops-container {
     position: relative;
-    width: 80vw;
-    height: 40vw;
+    width: 60vw;
+    height: 30vw;
     border-radius: 40px;
     background-color: #a1a7b7;
     img {
@@ -27,7 +27,7 @@ const PopUpsStyled = styled.div`
     button {
       position: absolute;
       border-radius: 6px;
-      top: 2vw;
+      top: 1vw;
       right: 3vw;
       padding: 1vw 3vw;
       font-size: 10px;
